@@ -33,14 +33,37 @@ ul {
     opacity: 0.9;
   }
 }
+.list {
+  list-style: disc;
+}
+
 .text {
   font-size: 1.4rem;
   font-weight: 700;
 }
 
+.strong-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+}
+
+.wrapper {
+  width: 1204px;
+  margin: 0 auto;
+}
+
+.inner {
+  padding: 0 40px;
+}
+
+.subtitle {
+  border-bottom: 2px solid orange;
+}
+
 .movie-wrapper {
   position: relative;
-  margin: 100px 20px;
+  margin: 20px 0;
   width: 800px;
 }
 

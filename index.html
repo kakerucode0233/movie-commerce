@@ -8,8 +8,82 @@
   <link rel="stylesheet" href="css/pc.css">
 </head>
 <body>
-  <main>
-    <div id="app">
+  <main class="wrapper">
+    <div id="app" class="inner">
+      <h1>動画コマースの紹介</h1>
+      <h2 class="subtitle">動画コマースとは</h2>
+      <p>
+        動画を視聴したまま直接商品を購入できる新たな通販システム。
+        <br>
+        例えば、下の動画のように動画視聴中にテントをクリックすると商品詳細が現れたり、商品ページに飛べるようなもの。
+        <br>
+        よく似たものに動画をECサイト内に埋め込むだけの『動画EC』や、インスタライブ等でライブ中継しながら商品を紹介する『ライブコマース』がある。
+      </p>
+      <a href="https://douga-kanji.com/posts/movie-commerce" target="_blank">参考ページ</a>
+
+      <h2 class="subtitle">動画コマースのメリット</h2>
+      <p>
+        <span class="strong-text">グッときてハッとしてパッと買えちゃう！</span>
+        <br>
+        顧客が「コレいいな」「気になる」と思った瞬間を逃さない。
+        <br>
+        通常の動画の場合、視聴中に気になる商品があっても、視聴後に動画使用商品一覧などから探すか、視聴途中に商品ページへ飛ぶという選択になる。
+        しかし、これでは感情が揺さぶられてから商品詳細を見るまでに時差が発生し、詳細ページにたどり着くまでに購入意欲が低下するか、最悪その感動を忘れてしまう。
+        <br>
+        動画コマースは視聴中でも気になる商品の詳細確認やページ遷移、あとで見るなどが選択できるため、顧客の感動から購入までの導線を短くできる。
+      </p>
+
+      <h2 class="subtitle">TIGコマース</h2>
+      <p>
+        以上で紹介した動画コマースを、パロニム社で開発した次世代インタラクティブ動画技術であるTIGを活用して開発し、サービス化したもの。
+        <br>
+        動画内にクーポンを仕込むなど、視聴維持の工夫をすることで離脱率52.8%(通常動画5%)を記録。
+        <br>
+        <a href="https://www.arts-crafts.co.jp/post-4711/" target="_blank">参考ページ</a>
+      </p>
+      <h3>TIGコマースの他社事例</h3>
+      <p>
+        2020年5月：<a href="https://www.paronym.jp/usecase/3282/" target="_blank">ニトリ　ウチソト</a>
+        <br>
+        2016年?：<a href="https://mil.movie/interview/925.html">JackBunny!!</a>
+        <br>
+        ??年：<a href="https://mil.movie/interview/4886.html">RUNA!</a> 
+      </p>
+
+      <h2 class="subtitle">TIGライブ</h2>
+      <p>
+        動画コマースをライブコマースに転用したサービス。恐らく、顧客のコメントから要望商品のアイコンを出現させ、ライバーが説明することなく詳細を知ることができるもの。
+        <a href="https://senken.co.jp/posts/paronym-210827" target="_blank">参考ページ</a>
+      </p>
+
+      <h2 class="subtitle">実際に作ってみた</h2>
+      <h3>実装機能</h3>
+      <ul class="list">
+        <li>
+          動画中の家具が移っているタイミングに注釈を出現
+        </li>
+        <li>
+          注釈をクリックすると商品詳細が現れる
+        </li>
+        <li>
+          お気に入り☆ボタンを押すと後で閲覧可能
+        </li>
+      </ul>
+      <h3>作ってみて分かったこと</h3>
+        <ul class="list">
+          <li>
+            家具が表示されている尺が短すぎるとクリックが難しい
+          </li>
+          <li>
+            デザインやアニメーションが気持ち良い方がゲーム感覚で楽しんでもらえそう
+          </li>
+          <li>
+            商品が画面内を大きく動く場合は追従が必要だが、少しハードルが高い
+          </li>
+          <li>
+            スマホで全画面表示されると機能が使えなくなる(何かしら対応方法がありそう)
+          </li>
+        </ul>
       <div class="movie-wrapper">
         <video id="movie" controls="controls" loop width="800" height="358" class="movie">
           <source src="https://static.low-ya.com/features/outdoor/pc/mv_video.mp4">
@@ -82,7 +156,6 @@
           </ul>
         </div>
       </div>
-
       <p id="movie-time"></p>
     </div>
   </main>
